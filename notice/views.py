@@ -22,9 +22,6 @@ class NoticeView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = NoticeSerializer
     lookup_field = 'pk'
     queryset = Notice.objects.all()
-    
-    def get_queryset(self):
-        return super().get_queryset()
 
 """
 NoticeListView api
